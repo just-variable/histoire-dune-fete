@@ -1,0 +1,24 @@
+nav#navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    margin: -0.5rem;
+    height: 50px;
+}
+
+nav#navbar .nav-logo{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav#navbar .nav-logo img{
+    filter: invert(1);
+    height: 35px;
+}
+
+
+div.footer {
+    background-color: #3ec1d3;
+}
