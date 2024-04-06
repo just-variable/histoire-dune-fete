@@ -15,7 +15,7 @@ async function load(){
     allExceptVideo.forEach(e=>{
         e.classList.add("hidden")
     })
-    await sleep(1600);
+    await sleep(2100);
     allExceptVideo.forEach(e=>{
         e.classList.add("show")
         e.classList.remove("hidden")

@@ -33,7 +33,7 @@ body{
 #load-logo {
     opacity: 0%;
     animation-name: load;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 .show{
     animation-name: show;
@@ -74,6 +74,11 @@ nav#navbar .nav-logo img{
     filter: invert(1);
     height: 35px;
 }
+
+nav#navbar .nav-group{
+    padding: 10px;
+}
+
 nav#navbar .nav-group a{
     color: white;
 }
@@ -89,7 +94,7 @@ nav#navbar .nav-group a{
 }
 
 .img-left img{
-    width: 30vw;
+    width: 35vw;
 }
 
 footer {
@@ -117,6 +122,6 @@ footer .social-media-buttons img{
 }
 
 .hidden{
-    /* opacity: 0; */
     display: none;
+    opacity: 0;
 }
