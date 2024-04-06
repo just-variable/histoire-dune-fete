@@ -18,7 +18,28 @@ nav#navbar .nav-logo img{
     height: 35px;
 }
 
+footer {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    min-height: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+}
 
-div.footer {
-    background-color: #3ec1d3;
+footer .social-media-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .social-media-buttons a{
+    height: 25;
+}
+
+footer .social-media-buttons img{
+    height: 25px;
 }
