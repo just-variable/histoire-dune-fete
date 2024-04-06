@@ -2,7 +2,7 @@ nav#navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: black;
+    background-color: #000;
     margin: -0.5rem;
     height: 50px;
 }
