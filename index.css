@@ -15,14 +15,14 @@
     transform: scale(100%);
     opacity: 100%;
     align-self: center;
-    filter: invert(1);
+    filter: invert(0);
   }
   100% {
     align-self: center;
     filter: invert(1);
     opacity: 100%;
     margin: auto;
-    transform: translateY(-320px);
+    transform: translateY(-40vh);
   }
 }
 @keyframes show {
@@ -56,7 +56,7 @@ body {
   filter: invert(1);
   opacity: 100%;
   margin: auto;
-  transform: translateY(-320px);
+  transform: translateY(-40vh);
   position: absolute;
 }
 
