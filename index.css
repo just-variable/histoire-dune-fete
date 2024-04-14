@@ -1,19 +1,28 @@
 @keyframes load {
   0% {
-    transform: scale(60%);
+    align-self: center;
+    transform: scale(150%);
     opacity: 50%;
+    filter: invert(0);
   }
   30% {
-    transform: scale(38%);
+    transform: scale(100%);
     opacity: 100%;
+    align-self: center;
+    filter: invert(0);
   }
-  95% {
-    transform: scale(38%);
+  50% {
+    transform: scale(100%);
     opacity: 100%;
+    align-self: center;
+    filter: invert(1);
   }
   100% {
-    opacity: 0%;
-    transform: scale(30%);
+    align-self: center;
+    filter: invert(1);
+    opacity: 100%;
+    margin: auto;
+    transform: translateY(-320px);
   }
 }
 @keyframes show {
@@ -40,9 +49,15 @@ body {
 }
 
 #load-logo {
-  opacity: 0%;
   animation-name: load;
   animation-duration: 2s;
+  align-self: center;
+  height: 120px;
+  filter: invert(1);
+  opacity: 100%;
+  margin: auto;
+  transform: translateY(-320px);
+  position: absolute;
 }
 
 .show {
@@ -124,8 +139,16 @@ body {
   background-color: #3ec1d3;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body #top-logo {
+  position: absolute;
+  top: 10px;
+  left: calc(50vw - 25px);
+  height: 50px;
+  filter: invert(1);
 }
 body .wrapper {
   display: flex;
@@ -138,7 +161,7 @@ body .wrapper .logo {
   align-items: center;
 }
 body .wrapper .logo img {
-  height: 70px;
+  height: 100px;
   filter: invert(1);
 }
 body .wrapper .main {
@@ -172,6 +195,17 @@ body .wrapper .contact {
 }
 body .wrapper .contact a img {
   height: 35px;
+}
+body #footer-note {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+body #footer-note p {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
