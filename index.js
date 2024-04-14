@@ -5,14 +5,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-allExceptVideo = Array.from(allExceptVideo);
-allExceptVideo.splice(0, 10);
-
 async function load(){
-    allExceptVideo.forEach(e=>{
-        e.classList.add("hidden");
-    })
-    await sleep(2300);
+    await sleep(100);
     allExceptVideo.forEach(e=>{
         e.classList.add("show");
         e.classList.remove("hidden");
@@ -22,4 +16,16 @@ async function load(){
     })
 }
 
-load();
+allExceptVideo = Array.from(allExceptVideo);
+// allExceptVideo.splice(0, 10);
+console.log(allExceptVideo)
+allExceptVideo.splice(0, 10);
+
+allExceptVideo.forEach(e=>{
+    e.classList.add("hidden");
+})
+
+window.addEventListener("load", ()=>{
+    load();
+})
+
