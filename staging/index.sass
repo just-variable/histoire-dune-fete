@@ -1,0 +1,189 @@
+@font-face 
+    font-family: fondy
+    src: url("./res/fondy.ttf")
+
+$color-blue-main: #3ec0d2
+$color-blue-secondary: #208996
+$color-orange: #ff980e
+$color-pink: #f81193
+$color-gray: #b1b1b1
+$color-gold: #ffd700
+
+    
+@keyframes load 
+    0% 
+        transform: scale(60%)
+        opacity: 50%
+    
+    30% 
+        transform: scale(38%)
+        opacity: 100%
+    
+    95% 
+        transform: scale(38%)
+        opacity: 100%
+    
+    100%
+        opacity: 0%
+        transform: scale(30%)
+    
+
+@keyframes show 
+    0% 
+        opacity: 50%
+    
+    100%
+        opacity: 100%
+        transform: scale(100%)
+
+body
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    margin: 0
+    overflow-x: hidden
+    background-color: $color-blue-main
+    
+#load-logo 
+    height: 320px
+    opacity: 0%
+    animation-name: load
+    animation-duration: 0.2s
+    filter: invert(1)
+    
+
+.show
+    animation-name: show
+    animation-duration: 0.3s
+
+
+nav#navbar
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    background-color: #FFF
+    width: 100%
+    height: 50px
+    margin-bottom: 10px
+    box-shadow: 0px 0px 4px #333
+
+    .nav-group
+        padding: 10px
+
+        a
+            color: white
+
+    .nav-logo
+        flex-grow: 1
+        display: flex
+        justify-content: center
+
+        img
+            height: 35px
+            opacity: 60%
+
+
+
+.video-container 
+    height: 100vh
+    width: 100vw
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+
+.img-left
+    margin: 10px
+    padding: 10px
+    display: flex
+    align-items: center
+    gap: 20px
+    background-color: #DDD
+    border-radius: 7px
+
+    img
+        width: 35vw
+
+
+.title
+    display: flex
+    justify-content: center
+    gap: 8px
+    span
+        font-size: min(40px, 2.4rem)
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    span:nth-child(1)
+        color: $color-pink
+    span:nth-child(2)
+        color: $color-orange
+
+
+
+.container
+
+    .tickets-info
+        margin-top: 10px
+        h2
+            color: white
+            margin: 0px
+
+    .tickets
+        background-color: $color-blue-secondary
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr))
+        justify-items: center
+        gap: 10px
+        padding: 10px 3px
+        margin-top: 5px
+        box-shadow: 0px -1px 4px #333
+
+        .ticket
+            width: min(190px, 80%)
+            padding: 10px
+            border: 2px solid black
+            border-radius: 7px
+            h5
+                margin: 0
+                color: white
+                font-size: 20px
+                font-family: fondy
+                font-weight: 500
+            h6
+                margin: 0
+            p
+                color: black
+
+
+
+
+footer 
+    background-color: #FFF
+    color: white
+    width: 100%
+    // min-height: 1rem
+    padding: 0px
+    box-shadow: 0px 0px -4px #333
+
+    .social-media-buttons
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        gap: 10px
+        padding: 7px
+
+        a
+            margin: 0
+            padding: 0
+            display: flex
+            align-items: center
+
+        img
+            height: 28px
+            filter: invert(1)
+            opacity: 60%
+            // filter: grayscale(0)
+
+.hidden
+    display: none
+    opacity: 0
+
+    
