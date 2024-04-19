@@ -7,6 +7,12 @@
     100%
         transform: translateX(2120px)
 
+@keyframes shine 
+    100%
+      background-position: 150% center
+    
+  
+
 
 
 .tickets-wrapper
@@ -23,7 +29,7 @@
         animation-duration: 40s
         animation-timing-function: linear
         animation-iteration-count: infinite
-        background-color: $color-orange
+        background-color: $color-pink   
         margin-left: -2800px
         img
             height: 20px
@@ -32,41 +38,66 @@
 
     .tickets
         display: grid
-        grid-template: repeat(auto-fit, minmax(130px, 1fr)) / repeat(auto-fit, minmax(190px, 1fr))
+        grid-template: repeat(auto-fit, minmax(180px, 1fr)) / repeat(auto-fit, minmax(200px, 1fr))
         justify-items: center
         gap: 10px
         padding: 10px 3px
         margin-top: 5px
 
+        .carnival-pass
+            animation: shine 4s ease infinite
+
+            background: linear-gradient(45deg, #FFF 50%, rgba(255, 152, 14, 0.6) 60%, rgba(255, 152, 14, 0.6) 60%, #FFF 82%)
+            background-size: 400% auto
         .ticket
             width: min(140px, 70%)
-            padding: 10px
+            padding: 10px 10px 0 10px
             box-shadow: 0px 0px 4px #444
             border-radius: 7px
-            background-color: $color-pink
+            background-color: #fff
+            border-left: 4px solid $color-pink
             display: flex
             flex-direction: column
+            justify-content: space-between
             align-items: flex-start
             line-height: 20px
+            overflow-x: hidden
             h5
                 margin: 0
-                color: #FFF
+                color: $color-pink
                 font-size: 25px
                 font-family: fondy
                 font-weight: 500
+                text-align: center
             h6
-                margin-top: 5px
+                margin: 5px 0 0 0
                 color: white
-                font-size: 10px
+                font-size: 12px
                 font-weight: 600
-                color: #FFF
+                color: #000
             p
-                color: #FFF
+                color: #000
                 margin: 10px 0
-                font-weight: 600
+                font-weight: 700
+                font-size: 14px
+                line-height: 16px
             ul
                 list-style-type: none
                 padding: 0
                 li
                     padding: 2px 0
+            .ticket-footer
+                width: 130%
+                height: 30px
+                margin: 0 0 0 -20px
+                display: flex
+                background-color: $color-orange
+                justify-content: center
+                align-items: center
+                p
+                    color: white
+                    margin: 0
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 20px
                     
