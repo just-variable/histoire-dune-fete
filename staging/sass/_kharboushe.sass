@@ -1,0 +1,49 @@
+@import "_00vars"
+
+@keyframes slide-kharboushe
+    0% 
+        transform: translate(0)
+    
+    100%
+        transform: translateX(387px)
+
+
+
+.kharboushe-wrapper
+    background-color: #FFF
+    padding: 10px 0 0 0
+    overflow-x: hidden
+    .kharboushe-title
+        display: flex
+        align-items: center
+        white-space: nowrap
+        background-color: black
+        animation-name: slide-kharboushe
+        animation-duration: 6s
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+        margin: 0 0 0 -400px
+        height: 35px
+        color: white
+        padding: 1px 0
+        h2
+            color: white
+            font-size: 25px
+            padding: 5px 0
+            margin: 0 2px 0 0
+        span
+            margin: 0
+            font-size: 12px
+            font-weight: 400
+
+        img
+            height: 30px
+            filter: invert(1)
+            margin: 0 30px
+    .kharboushe
+        height: 100px
+        box-shadow: 0px -1px 4px #333
+        overflow-x: hidden
+        p
+            margin: 0
+
