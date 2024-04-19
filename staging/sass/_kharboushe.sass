@@ -5,7 +5,7 @@
         transform: translate(0)
     
     100%
-        transform: translateX(387px)
+        transform: translateX(3870px)
 
 
 
@@ -19,10 +19,10 @@
         white-space: nowrap
         background-color: black
         animation-name: slide-kharboushe
-        animation-duration: 6s
+        animation-duration: 60s
         animation-timing-function: linear
         animation-iteration-count: infinite
-        margin: 0 0 0 -400px
+        margin: 0 0 0 -4000px
         height: 35px
         color: white
         padding: 1px 0
@@ -41,9 +41,37 @@
             filter: invert(1)
             margin: 0 30px
     .kharboushe
-        height: 100px
+        // height: 300px
         box-shadow: 0px -1px 4px #333
         overflow-x: hidden
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+        padding: 20px
         p
             margin: 0
+            
+        .kharboushe-item
+            display: flex
+            align-items: center
+            gap: 10px
+            img
+                border-radius: 50%
+                height: 100px
+            .kharboushe-item-text
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+            p:nth-child(1)
+                font-size: 25px
+            p:nth-child(2)
+                font-size: 15px
+
+        .left
+            flex-direction: row-reverse
+            .kharboushe-item-text
+                align-items: flex-end
+                p
+                    text-align: right
 
