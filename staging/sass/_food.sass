@@ -1,0 +1,33 @@
+@keyframes slide-food
+    0% 
+        transform: translate(0)
+    
+    100%
+        transform: translateX(2200px)
+
+    
+    
+.food-wrapper
+    background-color: $color-blue-secondary
+    padding: 10px 0 0 0
+    .food
+        h2
+            white-space: nowrap
+            background-color: $color-orange
+            color: white
+            animation-name: slide-food
+            animation-duration: 40s
+            animation-timing-function: linear
+            animation-iteration-count: infinite
+            margin: 0 0 0 -3000px
+            img
+                height: 20px
+                filter: invert(1)
+                margin: 0 10px
+        .food-item
+            margin: 10px
+            display: flex
+            align-items: center
+            color: white
+            img
+                height: 80px

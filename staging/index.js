@@ -8,14 +8,17 @@ function sleep(ms) {
 }
 
 allExceptVideo = Array.from(allExceptVideo);
-allExceptVideo.splice(0, 10);
+allExceptVideo.splice(0, 11);
 
+console.log(allExceptVideo)
 
 async function load(){
     allExceptVideo.forEach(e=>{
         e.classList.add("hidden");
     })
-    await sleep(200);
+    navbar.style.display = "none"
+    await sleep(100);
+    navbar.style.display = "flex"
     allExceptVideo.forEach(e=>{
         e.classList.add("show");
         e.classList.remove("hidden");
@@ -25,5 +28,4 @@ async function load(){
     })
 }
 
-navbar.classList.add("show")
 load();
