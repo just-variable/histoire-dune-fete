@@ -415,6 +415,9 @@ footer .social-media-buttons img {
   background-color: #208996;
   padding: 10px 0 0 0;
 }
+.food-wrapper .food {
+  overflow-x: hidden;
+}
 .food-wrapper .food h2 {
   white-space: nowrap;
   background-color: #ff980e;
