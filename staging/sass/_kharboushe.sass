@@ -13,6 +13,13 @@
     background-color: #FFF
     padding: 10px 0 0 0
     overflow-x: hidden
+    .background-img
+        height: 337px
+        width: 100%
+        opacity: 4%
+        z-index: 0
+        position: absolute
+        overflow: hidden
     .kharboushe-title
         display: flex
         align-items: center
@@ -48,22 +55,28 @@
         display: flex
         flex-direction: column
         align-items: center
-        gap: 20px
+        gap: 30px
         padding: 20px 0px
         h2
-            margin: 0
             font-size: 16px
             text-align: center
-            margin: 0 0 15px 0
+            margin: 0
             font-weight: 600
+            .bold
+                color: white
+                -webkit-text-stroke: 0.1px #555
+                text-stroke: 0.1px #555
+                text-shadow: 0px 0px 5px #222
         p
             margin: 0
             
         .kharboushe-item
+            z-index: 3
             display: flex
             align-items: center
             gap: 10px
             margin: 0 20px
+            max-width: 550px
             img
                 border-radius: 50%
                 height: 100px
@@ -71,19 +84,36 @@
                 display: flex
                 flex-direction: column
                 align-items: flex-start
-                p:nth-child(1)
-                    font-size: 25px
-                p:nth-child(2)
-                    font-size: 16px
+                .activity-title
+                    display: flex
+                    align-items: flex-end
+                    gap: 4px
+                    p
+                        font-size: 25px
+                        font-weight: 500
+                        border-radius: 7px
+                p.price
+                    font-size: 13px
+                    margin: 0 0 4px 0
+                    background-color: #444
+                    color: white
+                    padding: 2px 7px
+                    border-radius: 4px
+                    font-weight: 500
 
-        .left
-            flex-direction: row-reverse
-            .kharboushe-item-text
-                align-items: flex-end
-                p:nth-child(1)
-                    margin: 0 10px 0 0
-                p:nth-child(2)
-                    text-align: left
-                    margin-left: 10px
-                    text-justify: inter-word
+
+
+
+        // .left
+        //     flex-direction: row-reverse
+        //     .activity-title
+        //         flex-direction: row-reverse
+        //     .kharboushe-item-text
+        //         align-items: flex-end
+        //         p:nth-child(1)
+        //             margin: 0 10px 0 0
+        //         p:nth-child(3)
+        //             text-align: left
+        //             margin-left: 10px
+        //             text-justify: inter-word
 

@@ -94,7 +94,7 @@ nav#navbar .nav-logo img {
 }
 @keyframes shine {
   100% {
-    background-position: 150% center;
+    background-position: 140% center;
   }
 }
 .tickets-wrapper {
@@ -124,12 +124,12 @@ nav#navbar .nav-logo img {
   display: grid;
   grid-template: repeat(auto-fit, minmax(180px, 1fr))/repeat(auto-fit, minmax(160px, 1fr));
   justify-items: center;
-  gap: 10px;
+  gap: 10px 10px;
   padding: 10px 3px;
   margin-top: 5px;
 }
 .tickets-wrapper .tickets .carnival-pass {
-  animation: shine 3s linear infinite;
+  animation: shine 2.7s linear infinite;
   background: linear-gradient(45deg, #FFF 50%, rgba(255, 152, 14, 0.5) 60%, rgba(255, 152, 14, 0.5) 60%, #FFF 82%);
   background-size: 400% auto;
 }
@@ -322,6 +322,14 @@ footer .social-media-buttons img {
   padding: 10px 0 0 0;
   overflow-x: hidden;
 }
+.kharboushe-wrapper .background-img {
+  height: 337px;
+  width: 100%;
+  opacity: 4%;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+}
 .kharboushe-wrapper .kharboushe-title {
   display: flex;
   align-items: center;
@@ -361,24 +369,31 @@ footer .social-media-buttons img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px 0px;
 }
 .kharboushe-wrapper .kharboushe h2 {
-  margin: 0;
   font-size: 16px;
   text-align: center;
-  margin: 0 0 15px 0;
+  margin: 0;
   font-weight: 600;
+}
+.kharboushe-wrapper .kharboushe h2 .bold {
+  color: white;
+  -webkit-text-stroke: 0.1px #555;
+  text-stroke: 0.1px #555;
+  text-shadow: 0px 0px 5px #222;
 }
 .kharboushe-wrapper .kharboushe p {
   margin: 0;
 }
 .kharboushe-wrapper .kharboushe .kharboushe-item {
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 0 20px;
+  max-width: 550px;
 }
 .kharboushe-wrapper .kharboushe .kharboushe-item img {
   border-radius: 50%;
@@ -389,25 +404,24 @@ footer .social-media-buttons img {
   flex-direction: column;
   align-items: flex-start;
 }
-.kharboushe-wrapper .kharboushe .kharboushe-item .kharboushe-item-text p:nth-child(1) {
-  font-size: 25px;
-}
-.kharboushe-wrapper .kharboushe .kharboushe-item .kharboushe-item-text p:nth-child(2) {
-  font-size: 16px;
-}
-.kharboushe-wrapper .kharboushe .left {
-  flex-direction: row-reverse;
-}
-.kharboushe-wrapper .kharboushe .left .kharboushe-item-text {
+.kharboushe-wrapper .kharboushe .kharboushe-item .kharboushe-item-text .activity-title {
+  display: flex;
   align-items: flex-end;
+  gap: 4px;
 }
-.kharboushe-wrapper .kharboushe .left .kharboushe-item-text p:nth-child(1) {
-  margin: 0 10px 0 0;
+.kharboushe-wrapper .kharboushe .kharboushe-item .kharboushe-item-text .activity-title p {
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 7px;
 }
-.kharboushe-wrapper .kharboushe .left .kharboushe-item-text p:nth-child(2) {
-  text-align: left;
-  margin-left: 10px;
-  text-justify: inter-word;
+.kharboushe-wrapper .kharboushe .kharboushe-item .kharboushe-item-text p.price {
+  font-size: 13px;
+  margin: 0 0 4px 0;
+  background-color: #444;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 @keyframes slide-partners {
@@ -464,11 +478,9 @@ footer .social-media-buttons img {
 .food-wrapper {
   background-color: #208996;
   padding: 10px 0 0 0;
-}
-.food-wrapper .food {
   overflow-x: hidden;
 }
-.food-wrapper .food h2 {
+.food-wrapper h2 {
   white-space: nowrap;
   background-color: #ff980e;
   color: white;
@@ -478,19 +490,35 @@ footer .social-media-buttons img {
   animation-iteration-count: infinite;
   margin: 0 0 0 -3000px;
 }
-.food-wrapper .food h2 img {
+.food-wrapper h2 img {
   height: 20px;
   filter: invert(1);
   margin: 0 10px;
 }
+.food-wrapper .food {
+  padding: 20px;
+}
 .food-wrapper .food .food-item {
-  margin: 10px;
   display: flex;
   align-items: center;
   color: white;
+  gap: 10px;
 }
 .food-wrapper .food .food-item img {
   height: 80px;
+  border-radius: 50%;
+}
+.food-wrapper .food .food-item .food-text {
+  display: flex;
+  flex-direction: column;
+}
+.food-wrapper .food .food-item .food-text h3 {
+  margin: 0;
+  font-size: 23px;
+}
+.food-wrapper .food .food-item .food-text p {
+  font-size: 16px;
+  margin: 0;
 }
 
 @font-face {
@@ -538,10 +566,6 @@ span.orange {
 .wrapper {
   margin: 100px 0;
   box-shadow: 0px 0px 7px #333;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.css.map */
