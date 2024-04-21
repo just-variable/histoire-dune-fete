@@ -282,19 +282,23 @@ footer .social-media-buttons img {
   align-items: center;
   z-index: 2;
 }
-.music-wrapper .music .joelle img {
+.music-wrapper .music .music-profile img {
   border-radius: 50%;
   height: 150px;
 }
-.music-wrapper .music .joelle .profile-text p {
-  font-size: 10px;
+.music-wrapper .music .music-profile .profile-text {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.music-wrapper .music .dj img {
-  border-radius: 50%;
-  height: 150px;
+.music-wrapper .music .music-profile .profile-text h3 {
+  margin: 0;
 }
-.music-wrapper .music .dj .profile-text p {
-  font-size: 10px;
+.music-wrapper .music .music-profile .profile-text p {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0;
 }
 
 .games-wrapper h2 {
@@ -358,7 +362,14 @@ footer .social-media-buttons img {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 25px;
+}
+.kharboushe-wrapper .kharboushe h2 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-weight: 600;
 }
 .kharboushe-wrapper .kharboushe p {
   margin: 0;
@@ -367,6 +378,7 @@ footer .social-media-buttons img {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 0 20px;
 }
 .kharboushe-wrapper .kharboushe .kharboushe-item img {
   border-radius: 50%;
@@ -389,8 +401,12 @@ footer .social-media-buttons img {
 .kharboushe-wrapper .kharboushe .left .kharboushe-item-text {
   align-items: flex-end;
 }
-.kharboushe-wrapper .kharboushe .left .kharboushe-item-text p {
-  text-align: right;
+.kharboushe-wrapper .kharboushe .left .kharboushe-item-text p:nth-child(1) {
+  margin: 0 10px 0 0;
+}
+.kharboushe-wrapper .kharboushe .left .kharboushe-item-text p:nth-child(2) {
+  text-align: left;
+  margin-left: 40px;
 }
 
 @keyframes slide-partners {
@@ -521,6 +537,10 @@ span.orange {
 .wrapper {
   margin: 100px 0;
   box-shadow: 0px 0px 7px #333;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.css.map */
