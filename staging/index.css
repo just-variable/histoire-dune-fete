@@ -321,6 +321,7 @@ footer .social-media-buttons img {
   background-color: #FFF;
   padding: 10px 0 0 0;
   overflow-x: hidden;
+  font-family: stupidMeeting;
 }
 .kharboushe-wrapper .background-img {
   height: 337px;
@@ -528,6 +529,14 @@ footer .social-media-buttons img {
 @font-face {
   font-family: janna;
   src: url("./res/janna.ttf");
+}
+@font-face {
+  font-family: Impact;
+  src: url("./res/impact.ttf");
+}
+@font-face {
+  font-family: stupidMeeting;
+  src: url("./res/stupid-meeting.otf");
 }
 @keyframes show {
   0% {
