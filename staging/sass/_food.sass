@@ -26,6 +26,9 @@
                 margin: 0 10px
     .food
         padding: 20px
+        display: flex
+        flex-direction: column
+        gap: 10px
         .food-item
             display: flex
             align-items: center
@@ -40,7 +43,11 @@
                 flex-direction: column
                 h3
                     margin: 0
-                    font-size: 23px
+                    font-size: 20px
                 p
                     font-size: 16px
                     margin: 0
+
+        .food-item:nth-child(2n)
+            flex-direction: row-reverse
+            text-align: right

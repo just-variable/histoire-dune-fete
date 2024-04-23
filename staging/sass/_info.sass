@@ -1,0 +1,82 @@
+@keyframes slide-dates
+    0% 
+        transform: translate(0)
+    
+    100%
+        transform: translateX(3870px)
+
+@keyframes slide-time
+    0% 
+        transform: translate(0)
+    
+    100%
+        transform: translateX(-3870px)
+
+
+.info-wrapper
+    .dates
+        display: flex
+        align-items: center
+        white-space: nowrap
+        animation-name: slide-dates
+        animation-duration: 100s
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+        margin: 0 0 0 -3870px
+        gap: 25px
+        background-color: $color-blue-secondary
+        padding: 2px 0
+        h2
+            color: white
+            margin: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            font-size: 30px
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        img
+            height: 30px
+    .times
+        animation-name: slide-time
+        animation-duration: 100s
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+        margin: 5px -3870px 0 0
+        h2
+            font-size: 20px
+        img
+            height: 20px
+    .info-div
+        list-style-type: none
+        margin: 30px 0 0 0
+        padding: 0
+        display: flex
+        flex-direction: column
+        gap: 10px
+        .div-item
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 20px
+            p
+                color: white
+                text-align: center
+                font-size: 35px
+                margin: 0
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+                text-shadow: 0px 0px 5px #333
+            img
+                height: 100px
+                border-radius: 50%
+    
+    .sm-buttons
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 15px
+        margin: 20px 0 10px 0
+        img
+            height: 40px
+        a:nth-child(3)
+            margin: 0 0 0 -2px
