@@ -507,7 +507,7 @@ footer .social-media-buttons img {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 .food-wrapper .food .food-item {
@@ -515,7 +515,6 @@ footer .social-media-buttons img {
   align-items: center;
   color: white;
   gap: 10px;
-  max-width: 500px;
 }
 .food-wrapper .food .food-item img {
   height: 80px;
