@@ -1,24 +1,32 @@
 @keyframes load 
     0% 
-        transform: scale(60%)
-        opacity: 50%
-    
-    30% 
-        transform: scale(38%)
-        opacity: 100%
-    
-    95% 
-        transform: scale(38%)
-        opacity: 100%
-    
-    100%
-        opacity: 0%
+        align-self: center
         transform: scale(30%)
+        opacity: 50%
+        filter: invert(0)
+    
+    20% 
+        transform: scale(50%)
+        opacity: 100%
+        align-self: center
+        filter: invert(0)
+
+    50% 
+        transform: scale(50%)
+        opacity: 100%
+        align-self: center
+        filter: invert(0)
+
+
+    100%
+        align-self: center
+        opacity: 0%
+        transform: scale(500%)
+
 
     
 #load-logo
     height: 320px
     opacity: 0%
     animation-name: load
-    animation-duration: 0.1s
-    filter: invert(1)
+    animation-duration: 4s
