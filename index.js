@@ -17,7 +17,7 @@ async function load(){
         e.classList.add("hidden");
     })
     navbar.style.display = "none"
-    await sleep(100);
+    await sleep(3900);
     navbar.style.display = "flex"
     allExceptVideo.forEach(e=>{
         e.classList.add("show");
