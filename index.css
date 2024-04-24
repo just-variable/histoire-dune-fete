@@ -376,8 +376,8 @@ footer .social-media-buttons img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  padding: 20px 0px;
+  gap: 20px;
+  padding: 20px 0px 0px 0px;
 }
 .kharboushe-wrapper .kharboushe h2 {
   font-size: 16px;
@@ -430,6 +430,40 @@ footer .social-media-buttons img {
   border-radius: 4px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.kharboushe-wrapper .kharboushe h5 {
+  margin: 30px 0 -10px 0;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.kharboushe-wrapper .kharboushe .drinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px 20px 10px 20px;
+}
+.kharboushe-wrapper .kharboushe .drinks img {
+  height: 70px;
+}
+.kharboushe-wrapper .kharboushe .drinks .beer {
+  display: flex;
+}
+.kharboushe-wrapper .kharboushe .drinks .wine {
+  display: flex;
+  gap: 5px;
+}
+.kharboushe-wrapper .kharboushe .drinks .wine .price {
+  text-align: right;
+}
+.kharboushe-wrapper .kharboushe .drinks .price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7px;
+  justify-content: flex-start;
+}
+.kharboushe-wrapper .kharboushe .drinks .price .name {
+  font-size: 12px;
 }
 
 @keyframes slide-partners {
@@ -487,6 +521,9 @@ footer .social-media-buttons img {
   background-color: #208996;
   padding: 10px 0 0 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .food-wrapper h2 {
   white-space: nowrap;
@@ -509,6 +546,7 @@ footer .social-media-buttons img {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  max-width: 600px;
 }
 .food-wrapper .food .food-item {
   display: flex;
@@ -629,8 +667,9 @@ footer .social-media-buttons img {
   gap: 15px;
   background-color: #ff980e;
   padding: 10px;
-  margin: 20px 70px 0 70px;
+  margin: 20px auto 0 auto;
   border-radius: 7px;
+  max-width: 200px;
 }
 .info-wrapper .sm-buttons img {
   height: 40px;
@@ -701,7 +740,7 @@ footer .social-media-buttons img {
   gap: 10px;
   background-color: #ff6e6e;
   margin: 80px 0 -80px 0;
-  padding: 0 5px;
+  padding: 2px 10px;
 }
 .tickets-alert img {
   height: 15px;
@@ -709,6 +748,24 @@ footer .social-media-buttons img {
 .tickets-alert h2 {
   font-size: 15px;
   color: white;
+}
+
+.rate-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: -80px 0 70px 0;
+}
+.rate-wrapper .rate {
+  background-color: #ff980e;
+  width: 200px;
+  padding: 5px 20px;
+  border-radius: 7px;
+}
+.rate-wrapper .rate h3 {
+  margin: 0;
+  color: white;
+  text-align: center;
 }
 
 @font-face {
@@ -768,6 +825,11 @@ span.orange {
 
 .underline {
   text-decoration: underline;
+}
+
+.dollar {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
