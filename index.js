@@ -12,10 +12,21 @@ allExceptVideo.splice(0, 11);
 
 console.log(allExceptVideo)
 
+allExceptVideo.forEach(e=>{
+    e.classList.add("hidden");
+})
+video.forEach(e=>{
+    e.classList.add("hidden");
+})
+
+
 async function load(){
-    allExceptVideo.forEach(e=>{
-        e.classList.add("hidden");
+
+    video.forEach(e=>{
+        e.classList.remove("hidden");
+        e.classList.add("show");
     })
+
     navbar.style.display = "none"
     await sleep(3900);
     navbar.style.display = "flex"
@@ -28,4 +39,6 @@ async function load(){
     })
 }
 
-load();
+window.addEventListener('load', function () {
+    load();
+  })
