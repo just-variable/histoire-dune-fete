@@ -441,6 +441,7 @@ footer .social-media-buttons img {
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  max-width: 380px;
   margin: 0px 20px 10px 20px;
 }
 .kharboushe-wrapper .kharboushe .drinks img {
@@ -723,8 +724,10 @@ footer .social-media-buttons img {
 .photo-booth-wrapper .item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: white;
+  max-width: 400px;
 }
 .photo-booth-wrapper .item img {
   height: 200px;
