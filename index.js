@@ -28,7 +28,7 @@ async function load(){
     })
 
     navbar.style.display = "none"
-    await sleep(3900);
+    await sleep(100);
     navbar.style.display = "flex"
     allExceptVideo.forEach(e=>{
         e.classList.add("show");
